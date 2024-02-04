@@ -29,7 +29,6 @@ num_ensemblers = 100
 
 glass_df = pd.read_csv('data/' + filename + '.csv', header=None)  # pandas.DataFrame is returned by pandas.read_csv()
 glass_df = glass_df.astype(float)
-glass_df = glass_df.sample(n=min(20000,len(glass_df[0])))
 X = glass_df.values[:, :-1]  # numpy.ndarray is returned by pandas.DataFrame.values()
 ground_truth = glass_df.values[:, -1]
 
