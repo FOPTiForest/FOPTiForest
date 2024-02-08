@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 
 from detectors.opt_tree import *
-from detectors.opt import E2LSH
+from detectors.fopt import E2LSH
 
 
 class TestL2HashTree(unittest.TestCase):

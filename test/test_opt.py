@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 import numpy as np
 
-from detectors.opt import *
+from detectors.fopt import *
 
 
 class TestE2LSH(unittest.TestCase):

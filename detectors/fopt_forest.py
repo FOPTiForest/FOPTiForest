@@ -6,7 +6,7 @@ from joblib import Parallel, delayed
 import copy as cp
 import time
 
-class OptForest:
+class FOptForest:
 	def __init__(self, num_trees, sampler, lsh_family, threshold, branch, distance, granularity=1):
 		self._num_trees = num_trees
 		self._sampler = sampler

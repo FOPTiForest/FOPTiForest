@@ -10,7 +10,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.metrics import average_precision_score
 # from sklearn.ensemble import IsolationForest
 
-from detectors import OptIForest
+from detectors import FOptIForest
 import argparse
 
 """"""
@@ -33,7 +33,7 @@ glass_df = glass_df.sample(n=min(20000,len(glass_df[0])))
 X = glass_df.values[:, :-1]  # numpy.ndarray is returned by pandas.DataFrame.values()
 ground_truth = glass_df.values[:, -1]
 
-detectors = [("L2OPT", OptIForest('L2OPT', num_ensemblers, threshold, branch))]  # OptIForest for L2SH base detector with expected branch factor e
+detectors = [("L2OPT", FOptIForest('L2OPT', num_ensemblers, threshold, branch))]  # OptIForest for L2SH base detector with expected branch factor e
 for i, (dtc_name, dtc) in enumerate(detectors):
     print("\n" + dtc_name + ":")
     AUC = []

@@ -3,7 +3,7 @@ import math
 from .opt_node import OptNode
 from scipy.spatial import distance
 import random
-from .opt import HierHash
+from .fopt import HierHash
 
 from . import opt_node as nd
 

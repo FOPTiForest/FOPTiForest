@@ -5,8 +5,8 @@ import pandas as pd
 from detectors.opt_forest import *
 from detectors.sampling  import *
 from scipy.spatial import distance
-from detectors.opt import E2LSH
-from detectors.opt import AngleLSH
+from detectors.fopt import E2LSH
+from detectors.fopt import AngleLSH
 
 class TestOptForest(unittest.TestCase):
     def setUp(self):
